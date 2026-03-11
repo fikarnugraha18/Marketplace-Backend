@@ -14,6 +14,10 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+
+app.get("/", (req, res) => {
+  res.send("Marketplace API running");
+});
 app.use("/api/products", productRouter)
 app.use("/api/cart", cartRouter)
 
