@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "start": "ts-node-dev --respawn --transpile-only src/server.ts"
+  "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+  "start": "npx prisma db push && ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "keywords": [],
   "author": "",
